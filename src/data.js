@@ -1,5 +1,5 @@
 const data = {
-    images: [
+    movies: [
         {
             id: 1,
             dataName: 'spiderman',
@@ -68,13 +68,13 @@ const data = {
         },
         {
             id: 12,
-            dataName: 'ironman',
+            dataName: 'braveheart',
             src: './assets/braveheart.jpeg',
             title: 'BraveHeart',
         },
         {
             id: 13,
-            dataName: 'braveheart',
+            dataName: 'ironman',
             src: './assets/ironman2.jpg',
             title: 'Ironman 2',
         },

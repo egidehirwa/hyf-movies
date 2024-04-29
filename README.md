@@ -2,7 +2,7 @@
 
 > A website page displaying movies that a user can search through.
 
-![Movie Database]()
+![Movie Database](assets/movies-screenshot.png)
 
 ## Table of contents
 
@@ -35,7 +35,12 @@ Visit the page by going to the index.html page
 ## Code Examples
 
 ```js
-
+{
+            id: 1,
+            dataName: 'spiderman',
+            src: './assets/spiderman.jpg',
+            title: 'Spiderman',
+        }
 ```
 
 ## Features
@@ -48,7 +53,5 @@ List of features ready and Todos for future development
 
 ## Status
 
-Project is: _in progress_
+Project is: _completed_
 
-
-## Contact
