@@ -4,24 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Flights</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Movies</title>
     </head>
     <body>
         <main>
-            <div class="img">
-                <img src="./assets/flight.jpeg" alt="flight" />
-            </div>
-            <div id="parent">
-                <div class="flight test">
-                    <div class="name">Name</div>
-                    <div class="plane">Plane</div>
-                    <div class="departureDate">Departure Date</div>
-                    <div class="origin">Origin</div>
-                    <div class="arrivalDate">Arrival Date</div>
-                    <div class="destination">Destination</div>
-                    <div class="stops">Stops</div>
+            <section>
+                <div class="container">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="input" type="text" placeholder="Search for a movie">
+                    </div>
+                    <div class="movies"></div>
                 </div>
-            </div>
+            </section>
         </main>
         <script type="module" src="./src/init.js"></script>
     </body>

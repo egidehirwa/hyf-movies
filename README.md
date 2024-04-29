@@ -1,6 +1,8 @@
 # Image gallery
 
-> A simple
+> A website page displaying movies that a user can search through.
+
+![Movie Database]()
 
 ## Table of contents
 
@@ -10,17 +12,12 @@
 - [Setup](#setup)
 - [Features](#features)
 - [Status](#status)
-- [Inspiration](#inspiration)
 - [Contact](#contact)
 
 ## General info
 
 > The objective of the project is to practice separation of concern in
 > JavaScript.
-
-## Screenshots
-
-![Example screenshot]()
 
 ## Technologies
 
@@ -31,7 +28,9 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+clone the repo 
+Initialize the project with `git install`
+Visit the page by going to the index.html page
 
 ## Code Examples
 
@@ -43,19 +42,13 @@ clone the repo and start using the stop watch.
 
 List of features ready and Todos for future development
 
--
--
--
-
-To-do list:
-
--
--
+- Implement dark mode.
+- Store movies in database or use an api.
+- Animate the movies list.
 
 ## Status
 
 Project is: _in progress_
 
-## Inspiration
 
 ## Contact
