@@ -3,7 +3,8 @@ import filterHandler from "../handlers/filterHandler.js";
 
 const keyupEvent = () => {
     dom.input.addEventListener('keyup', () => {
-        filterHandler();
+        const value = dom.input.value;
+        filterHandler(value);
     })
 }
 
