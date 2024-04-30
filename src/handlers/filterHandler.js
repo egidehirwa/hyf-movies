@@ -1,17 +1,28 @@
 import dom from "../dom.js";
+import data from "../data.js";
 
-const filterHandler = () => {
-    const imageWrapper = document.querySelectorAll('.image-wrapper');
-    imageWrapper.forEach((movie) => {
-        const title = movie.querySelector('h3').innerText;
-        const value = dom.input.value;
-
-        if(title.toLowerCase().includes(value.toLowerCase())){
-            movie.classList.remove('hidden');
+const filterHandler = (value) => {
+    data.posters.forEach((poster) => {
+        const posterExists = document.getElementById(poster.id);
+        if(poster.title.toLowerCase().includes(value.toLowerCase())){
+            if(!posterExists){
+                dom.moviesContainer.append(poster.dom);
+            }
         } else {
-            movie.classList.add('hidden');
+            if(posterExists){
+                posterExists.remove();
+            }
         }
     })
+
+    if(dom.moviesContainer.children.length === 0){
+        dom.message.innerText = 'Movie not found, please search for another one.';
+        dom.message.classList.add('message');
+        dom.moviesContainer.append(dom.message);
+    } else {
+        dom.message.remove();
+    }
+
 }
 
 export default filterHandler;

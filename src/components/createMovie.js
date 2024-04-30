@@ -2,6 +2,8 @@
  * Create a movie element.
  * 
  * @param {object} movie - Movie object data.
+ * @property {number} movie.id - movie id.
+ * @property {string} movie.title - movie title
  * @returns {HTMLElement} - The movie element.
  */
 
